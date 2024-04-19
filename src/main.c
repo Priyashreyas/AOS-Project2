@@ -1,8 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "proc.h"
-
+#include "../header/algo.h"
 
 const int NUM_PROC = 10;
 const int NUM_SETS = 5;
@@ -22,21 +21,23 @@ int main() {
       arrivalQueue[i][j].arrivalTime = rand() % 100;
       arrivalQueue[i][j].expectedRuntime = (rand() % 10) + 1;
       arrivalQueue[i][j].priority = (rand() % 4) + 1;
-      printf("%d\n", arrivalQueue[i][j].arrivalTime);    
+      //printf("%d\n", arrivalQueue[i][j].arrivalTime);    
     }
-    printf("\n\n");
+    //printf("\n\n");
     // Sort arrival queue by arrival time
     qsort(arrivalQueue[i], NUM_PROC, sizeof(Proc), comparator);
 
     for (int j = 0; j < NUM_PROC; ++j) {
-      printf("%d\n", arrivalQueue[i][j].arrivalTime);
+      //printf("Process arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
     }
-    printf("\n\n");
-  } 
+    //printf("\n\n");
+    //nonPreempHPF(arrivalQueue[i], NUM_PROC); 
+  }
 
   // Free dynamic memory
   for (int i = 0; i < NUM_SETS; ++i) {
     free(arrivalQueue[i]);
+    arrivalQueue[i] = NULL;
   }
 
   return 0;

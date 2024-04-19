@@ -1,5 +1,5 @@
 all:
-	gcc -o main main.c
+	gcc -o main src/main.c src/queue.c src/hpf.c
 	./main
 
 clean:
