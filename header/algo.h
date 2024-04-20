@@ -1,4 +1,5 @@
 #include "proc.h"
 #include "node.h"
 
-void nonPreempHPF(Proc*, const int);
+void NonPreempHPF(Proc*, const int);
+void PreempHPF(Proc*, const int);
