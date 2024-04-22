@@ -33,6 +33,9 @@ int main() {
     //printf("\n\n");
     //NonPreempHPF(arrivalQueue[i], NUM_PROC); 
     //PreempHPF(arrivalQueue[i], NUM_PROC);
+
+    FirstComeFirstServe(arrivalQueue[i], NUM_PROC);
+    //ShortestRemainingTimeFirst(arrivalQueue[i], NUM_PROC);
   }
 
   // Free dynamic memory

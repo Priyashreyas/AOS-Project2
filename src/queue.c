@@ -16,3 +16,10 @@ void insertNode(Queue* q, Node* node) {
   q->head = node;
 }
 
+Node* popNode(Queue* q) {
+    if (q->head == NULL) return NULL;
+    Node* node = q->head;
+    q->head = q->head->next;
+    node->next = NULL;
+    return node;
+}

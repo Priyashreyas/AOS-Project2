@@ -8,4 +8,5 @@ typedef struct Queue {
 } Queue;
 
 void insertNode(Queue* q, Node* node);
+Node* popNode(Queue* q);
 #endif
