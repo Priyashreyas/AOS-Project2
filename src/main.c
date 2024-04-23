@@ -4,7 +4,7 @@
 #include "../header/algo.h"
 
 const int NUM_PROC = 10;
-const int NUM_SETS = 5;
+const int NUM_SETS = 4;
 
 int comparator(const void* p1, const void* p2) {
   Proc* proc1 = (Proc*)p1;
@@ -28,14 +28,14 @@ int main() {
     qsort(arrivalQueue[i], NUM_PROC, sizeof(Proc), comparator);
     
     for (int j = 0; j < NUM_PROC; ++j) {
-      //printf("Process arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
+      printf("Process arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
     }
     //printf("\n\n");
     //NonPreempHPF(arrivalQueue[i], NUM_PROC); 
     //PreempHPF(arrivalQueue[i], NUM_PROC);
 
-    FirstComeFirstServe(arrivalQueue[i], NUM_PROC);
-    //ShortestRemainingTimeFirst(arrivalQueue[i], NUM_PROC);
+    //FirstComeFirstServe(arrivalQueue[i], NUM_PROC);
+    ShortestRemainingTimeFirst(arrivalQueue[i], NUM_PROC);
   }
 
   // Free dynamic memory
