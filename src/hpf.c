@@ -2,8 +2,7 @@
 #include <stdio.h>
 
 #include "../header/queue.h"
-
-const int SIM_TIME = 100;
+#include "../header/algo.h"
 
 void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
   // Initialize priority queues

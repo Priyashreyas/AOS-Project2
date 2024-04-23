@@ -70,8 +70,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "../header/queue.h"
-
-const int SIM_TIME = 100;
+#include "../header/algo.h"
 
 Node* createNode(Proc* proc) {
     Node* newNode = malloc(sizeof(Node));

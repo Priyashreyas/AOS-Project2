@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 #include "../header/queue.h"
-
-const int SIM_TIME=100;
+#include "../header/algo.h"
 
 void FirstComeFirstServe(Proc* processes, const int num_procs) {
     Queue* queue = malloc(sizeof(Queue));
