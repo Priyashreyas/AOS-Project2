@@ -39,14 +39,14 @@ void FirstComeFirstServe(Proc* processes, const int num_procs) {
             // Check if the process has completed its execution
             if (runningProc->totalRuntime == runningProc->process->expectedRuntime) {
                 runningProc->completionTime = quantum;
-                printf("CPU is being used by Process %d at quantum %d. Remaining Time: %d\n",
-                    runningProc->process->arrivalTime, quantum,
+                printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+                    runningProc->process->name, quantum,
                     runningProc->process->expectedRuntime - runningProc->totalRuntime);
                 free(runningProc); 
                 runningProc = NULL;
             } else {
-                printf("CPU is being used by Process %d at quantum %d. Remaining Time: %d\n",
-                   runningProc->process->arrivalTime, quantum,
+                printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+                   runningProc->process->name, quantum,
                    runningProc->process->expectedRuntime - runningProc->totalRuntime);
 
             }

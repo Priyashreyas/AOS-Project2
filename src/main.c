@@ -17,10 +17,12 @@ int main() {
   Proc* arrivalQueue[NUM_SETS];
   for (int i = 0;  i < NUM_SETS; ++i) {
     arrivalQueue[i] = malloc(NUM_PROC * sizeof(Proc));
+    char id = 'A';
     for (int j = 0; j < NUM_PROC; ++j) {
       arrivalQueue[i][j].arrivalTime = rand() % 100;
       arrivalQueue[i][j].expectedRuntime = (rand() % 10) + 1;
       arrivalQueue[i][j].priority = (rand() % 4) + 1;
+      arrivalQueue[i][j].name = id++;
       //printf("%d\n", arrivalQueue[i][j].arrivalTime);    
     }
     //printf("\n\n");
@@ -28,7 +30,7 @@ int main() {
     qsort(arrivalQueue[i], NUM_PROC, sizeof(Proc), comparator);
  
     for (int j = 0; j < NUM_PROC; ++j) {
-      printf("Process arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
+      printf("Process %c arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].name, arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
     }
     //printf("\n\n");
     //NonPreempHPF(arrivalQueue[i], NUM_PROC); 

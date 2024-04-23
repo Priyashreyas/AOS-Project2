@@ -171,7 +171,7 @@ void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc) {
                 runningProc->firstRun = quantum;
             }
             printf("CPU is being used by Process %d at quantum %d. Remaining Time: %d\n",
-                   runningProc->process->arrivalTime, quantum,
+                   runningProc->process->name, quantum,
                    runningProc->process->expectedRuntime - runningProc->totalRuntime);
             runningProc->totalRuntime++;
             if (runningProc->totalRuntime >= runningProc->process->expectedRuntime) {

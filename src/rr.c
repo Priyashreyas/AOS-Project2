@@ -56,7 +56,7 @@ void RoundRobin(Proc* arrivalQueue, const int numProc) {
     }
 
     if (runningProc != NULL) {
-      printf("Process %d is running at quantum %d!\n", runningProc->process->arrivalTime, quantum);
+      printf("Process %c is running at quantum %d!\n", runningProc->process->name, quantum);
     }
     else {
       printf("CPU is idle at time %d\n", quantum);

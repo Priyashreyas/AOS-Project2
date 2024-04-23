@@ -114,8 +114,8 @@ void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
         }
         // Print status
         if (runningProc != NULL) {
-            printf("CPU is being used by Process %d at quantum %d. Remaining Time: %d\n",
-                   runningProc->process->arrivalTime, quantum,
+            printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+                   runningProc->process->name, quantum,
                    runningProc->process->expectedRuntime - runningProc->totalRuntime);
         } else {
             printf("CPU is idle at quantum %d.\n", quantum);
