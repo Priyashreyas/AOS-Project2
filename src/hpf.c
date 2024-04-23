@@ -121,7 +121,6 @@ void PreempHPF(Proc* arrivalQueue, const int numProc) {
   int quantum = 0;
   int index = 0;
   Node* runningProc = NULL;
-  int currPriority = 1;
 
   while (quantum < SIM_TIME) {
     // Check if any process arrives at current quantum
@@ -157,45 +156,38 @@ void PreempHPF(Proc* arrivalQueue, const int numProc) {
       runningProc = NULL;
     }
     // If running process has not finished, put it back into priority queue
-    // Shift priority level down by 1
     else if (runningProc != NULL) {
       if (runningProc->process->priority == 1) {
         insertNode(priorityQueue1, runningProc);
-	currPriority = 2;
       }
       else if (runningProc->process->priority == 2) {
         insertNode(priorityQueue2, runningProc);
-	currPriority = 3;
       }
       else if (runningProc->process->priority == 3) {
         insertNode(priorityQueue3, runningProc);
-	currPriority = 4;
       }
       else if (runningProc->process->priority == 4) {
 	insertNode(priorityQueue4, runningProc);
-	currPriority = 1;
       }
       runningProc = NULL;
     }
 
     // Check if the CPU is available
     if (runningProc == NULL) {
-      // Cycle thorugh priority queues to find ready processes
-      int tempPriority = currPriority;
-      do {
-        if (tempPriority == 1 && priorityQueue1->head != NULL) {
+      // Check priority queues from highest to lowest prioity to find ready processes
+        if (priorityQueue1->head != NULL) {
           runningProc = priorityQueue1->head;
 	  priorityQueue1->head = priorityQueue1->head->next;
         }
-        else if (tempPriority == 2 && priorityQueue2->head != NULL) {
+        else if (priorityQueue2->head != NULL) {
 	  runningProc = priorityQueue2->head;
 	  priorityQueue2->head = priorityQueue2->head->next;
         }
-        else if (tempPriority == 3 && priorityQueue3->head != NULL) {
+        else if (priorityQueue3->head != NULL) {
 	  runningProc = priorityQueue3->head;
 	  priorityQueue3->head = priorityQueue3->head->next;
         }
-        else if (tempPriority == 4 && priorityQueue4->head != NULL) {
+        else if (priorityQueue4->head != NULL) {
 	  runningProc = priorityQueue4->head;
 	  priorityQueue4->head = priorityQueue4->head->next;
         }
@@ -206,18 +198,13 @@ void PreempHPF(Proc* arrivalQueue, const int numProc) {
 	    runningProc->firstRun = quantum;
 	  }
 	  runningProc->next = NULL;
-	  currPriority = tempPriority;
-	  break;
 	}
-	if (++tempPriority > 4)
-	  tempPriority = 1;
-      } while (tempPriority != currPriority);
-    }
+      }
     if (runningProc != NULL) {
       printf("Process %d is running at quantum %d!\n", runningProc->process->arrivalTime, quantum);
     }
     else {
-      currPriority = 1;	    
+      printf("CPU is idle at time %d\n", quantum);
     }
     quantum++;
   }
