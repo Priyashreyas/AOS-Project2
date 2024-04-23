@@ -37,6 +37,7 @@ int main() {
     //FirstComeFirstServe(arrivalQueue[i], NUM_PROC);
     //ShortestJobFirst(arrivalQueue[i], NUM_PROC);
     //ShortestRemainingTimeFirst(arrivalQueue[i], NUM_PROC);
+    RoundRobin(arrivalQueue[i], NUM_PROC);
   }
 
   // Free dynamic memory

@@ -11,5 +11,6 @@ void PreempHPF(Proc*, const int);
 void FirstComeFirstServe(Proc*, const int);
 void ShortestJobFirst(Proc*, const int);
 void ShortestRemainingTimeFirst(Proc*,const int);
+void RoundRobin(Proc*, const int);
 
 #endif
