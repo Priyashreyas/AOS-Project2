@@ -7,12 +7,15 @@
 void FirstComeFirstServe(Proc* processes, const int num_procs) {
     Queue* queue = malloc(sizeof(Queue));
     queue->head = NULL;
+    
+    Queue* finishQueue = malloc(sizeof(Queue));
+    finishQueue->head = NULL;
 
     int quantum = 0;
     Node* runningProc = NULL;
 
     
-    while (queue->head != NULL || runningProc != NULL || quantum < SIM_TIME) {
+    while (runningProc != NULL || quantum < SIM_TIME) {
         for (int i = 0; i < num_procs; i++) {
             if (processes[i].arrivalTime == quantum) {
                 Node* newProc = (Node*)malloc(sizeof(Node));
@@ -39,10 +42,10 @@ void FirstComeFirstServe(Proc* processes, const int num_procs) {
             // Check if the process has completed its execution
             if (runningProc->totalRuntime == runningProc->process->expectedRuntime) {
                 runningProc->completionTime = quantum;
+		insertNode(finishQueue, runningProc);
                 printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
                     runningProc->process->name, quantum,
                     runningProc->process->expectedRuntime - runningProc->totalRuntime);
-                free(runningProc); 
                 runningProc = NULL;
             } else {
                 printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
@@ -62,4 +65,7 @@ void FirstComeFirstServe(Proc* processes, const int num_procs) {
         free(runningProc);
     }
     free(queue);
+    queue = NULL;
+    free(finishQueue);
+    finishQueue = NULL;
 }
