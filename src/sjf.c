@@ -2,17 +2,27 @@
 #include <stdio.h>
 
 #include "../header/queue.h"
+#include "../header/algo.h"
 
-const int SIM_TIME=100;
 
-int runTimeComparator(void * p1, void * p2) {
+int runTimeComparator(const void * p1, const void * p2) {
 	Proc * proc1 = (Proc *) p1;
 	Proc * proc2 = (Proc *) p2;
-	if(proc1->run_time < proc2->run_time) {
+	if(proc1->expectedRuntime < proc2->expectedRuntime) {
 		return -1;
 	} else {
 		return 1;
 	}
+}
+
+int getQueueSize(Queue* queue) {
+	int qSize = 0;
+	Node* temp = queue->head;
+	while (temp != NULL) {
+		qSize++;
+		temp = temp->next;
+	}
+	return qSize;
 }
 
 void clearQueue(Queue* queue) {
@@ -23,7 +33,7 @@ void clearQueue(Queue* queue) {
     }
 }
 
-void ShortestJobFirst(Proc* arrivalQueue, int num_proc) {
+void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
     
     Queue* readyQueue = malloc(sizeof(Queue));
     readyQueue->head = NULL;
@@ -38,10 +48,10 @@ void ShortestJobFirst(Proc* arrivalQueue, int num_proc) {
     while (quantum < SIM_TIME) {
         // Check if any process arrives at the current quantum
 
-        while (index < numProc && arrivalQueue[index].arrivalTime == quantum) {
+        while (index < num_proc && arrivalQueue[index].arrivalTime == quantum) {
            // Initialize a new process node
-
-            Node* newProc = malloc(sizeof(Node));
+            
+	    Node* newProc = malloc(sizeof(Node));
             newProc->process = &arrivalQueue[index];
             newProc->firstRun = -1;
             newProc->totalRuntime = 0;
@@ -69,7 +79,11 @@ void ShortestJobFirst(Proc* arrivalQueue, int num_proc) {
             clearQueue(readyQueue);
             for (int j = 0; j < queueSize; j++) {
                 Node *newNode = malloc(sizeof(Node));
-                newNode->process = &procArray[j];
+                Proc* p = malloc(sizeof(Proc));
+		p->arrivalTime = procArray[j].arrivalTime;
+		p->expectedRuntime = procArray[j].expectedRuntime;
+		p->priority = procArray[j].priority;
+		newNode->process = p;
                 newNode->firstRun = -1;
                 newNode->totalRuntime = 0;
                 newNode->completionTime = -1;
@@ -116,5 +130,4 @@ void ShortestJobFirst(Proc* arrivalQueue, int num_proc) {
     }
     free(readyQueue);
     free(finishQueue);
-
 }
