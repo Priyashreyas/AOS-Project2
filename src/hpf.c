@@ -85,7 +85,7 @@ void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
       }
     }
     if (runningProc != NULL) {
-      //printf("Process %d is running at quantum %d!\n", runningProc->process->arrivalTime, quantum);
+      printf("Process %d is running at quantum %d!\n", runningProc->process->arrivalTime, quantum);
     }
     quantum++;
   }
