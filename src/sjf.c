@@ -42,7 +42,6 @@ void ShortestJobFirst(Proc* arrivalQueue, int num_proc) {
            // Initialize a new process node
 
             Node* newProc = malloc(sizeof(Node));
-            //printf("\nShortest Job First:\n");
             newProc->process = &arrivalQueue[index];
             newProc->firstRun = -1;
             newProc->totalRuntime = 0;
