@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 #include "../header/stats.h"
+#include "../header/algo.h"
 
 
-Avg CalcStats(Queue* finishQueue, int hpf, int prior) {
+void CalcStats(Avg* avg, Queue* finishQueue, int hpf, int prior) {
   double turnaround = 0;
   double response = 0;
   double waiting = 0;
@@ -22,9 +23,8 @@ Avg CalcStats(Queue* finishQueue, int hpf, int prior) {
     count++;
     temp = temp->next;
   }
-  Avg avg;
-  avg.avgTurnaround = turnaround / count;
-  avg.avgResponse = response / count;
-  avg.avgWaiting = waiting / count;
-  return avg;
+  avg->avgTurnaround = turnaround / count;
+  avg->avgResponse = response / count;
+  avg->avgWaiting = waiting / count;
+  avg->throughput = ((double) count) / SIM_TIME;
 }

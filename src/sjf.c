@@ -33,7 +33,7 @@ void clearQueue(Queue* queue) {
     }
 }
 
-void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
+void ShortestJobFirst(Proc* arrivalQueue, const int num_proc, Avg* avg) {
     
     Queue* readyQueue = malloc(sizeof(Queue));
     readyQueue->head = NULL;
@@ -129,6 +129,17 @@ void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
         quantum++;
 
     }
+    
+    // Get averages
+    CalcStats(avg, finishQueue, 0, -1);
+
+    // Print averages
+    printf("\n");
+    printf("Average turnaround time: %f\n", avg->avgTurnaround);
+    printf("Average response time: %f\n", avg->avgResponse);
+    printf("Average waiting time: %f\n", avg->avgWaiting);
+    printf("Throughput: %f\n", avg->throughput);
+
      // Free the remaining nodes in the ready queue
     while ((runningProc = popNode(readyQueue)) != NULL) {
         free(runningProc);

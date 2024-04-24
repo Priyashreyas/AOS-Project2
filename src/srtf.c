@@ -72,6 +72,7 @@
 #include "../header/queue.h"
 #include "../header/algo.h"
 
+
 Node* createNode(Proc* proc) {
     Node* newNode = malloc(sizeof(Node));
     if (!newNode) return NULL;
@@ -128,7 +129,7 @@ Node* mergeSort(Node* head) {
     return merge(left, right);
 }
 
-void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc) {
+void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc, Avg* avg) {
     Queue* readyQueue = malloc(sizeof(Queue));
     readyQueue->head = NULL;
 
@@ -189,6 +190,16 @@ void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc) {
         // Increment quantum at the end of the loop iteration
         quantum++;
     }
+
+    // Get averages
+    CalcStats(avg, finishQueue, 0, -1);
+    
+    // Print averages
+    printf("\n");
+    printf("Average turnaround time: %f\n", avg->avgTurnaround);
+    printf("Average response time: %f\n", avg->avgResponse);
+    printf("Average waiting time: %f\n", avg->avgWaiting);
+    printf("Throughput: %f\n", avg->throughput);
 
     // Clean up
     free(readyQueue);

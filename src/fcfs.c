@@ -4,7 +4,8 @@
 #include "../header/queue.h"
 #include "../header/algo.h"
 
-void FirstComeFirstServe(Proc* processes, const int num_procs) {
+
+void FirstComeFirstServe(Proc* processes, const int num_procs, Avg* avg) {
     Queue* queue = malloc(sizeof(Queue));
     queue->head = NULL;
     
@@ -61,6 +62,16 @@ void FirstComeFirstServe(Proc* processes, const int num_procs) {
 
         quantum++;
     }
+
+    // Get averages
+    CalcStats(avg, finishQueue, 0, -1);
+    
+    // Print averages
+    printf("\n");
+    printf("Average turnaround time: %f\n", avg->avgTurnaround);
+    printf("Average response time: %f\n", avg->avgResponse);
+    printf("Average waiting time: %f\n", avg->avgWaiting);
+    printf("Throughput: %f\n", avg->throughput);
 
     // Free any remaining nodes in the queue
     while ((runningProc = popNode(queue)) != NULL) {

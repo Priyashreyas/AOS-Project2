@@ -8,9 +8,9 @@ typedef struct Avg {
   double avgTurnaround;
   double avgResponse;
   double avgWaiting;
-  double avgThroughput; 
+  double throughput; 
 } Avg;
 
-Avg CalcStats(Queue*, int, int);
+void CalcStats(Avg*, Queue*, int, int);
 
 #endif

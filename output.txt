@@ -1,0 +1,176 @@
+FCFS Simulation and Statistics
+================================
+Run 1
+*jjjjjjjjwwwwwwwwwwUUUUUUbbbbbbbBBBBQkkkppppppppuuuuuDDDOOOOOOOOOOJJJJJJJJFRRgggggggVVVVVVVrrrrrrrrKKK
+Average turnaround time: 37.722222
+Average response time: 33.111111
+Average waiting time: 32.111111
+Throughput: 0.180000
+================================
+Run 2
+oooooooRRRRdddddddddjhhhhhhSSSSSSSSSHHHHHHHHVVVVVVVVeeeeeeeeeBBBBBBBBBWWWWLLLLLLPPPPQQQQQQQQQQUUUUUUUUU
+Average turnaround time: 34.733333
+Average response time: 28.866667
+Average waiting time: 27.866667
+Throughput: 0.150000
+================================
+Run 3
+oooooooHHHHfffqqqqFFFFFFFddDDDDDDDDWWWWWWWIIIIIIccccccccOOOOOOOOOOSSSSSSSSSSeeeeeeeeeeMxllllKKBBBBBBB
+Average turnaround time: 33.888889
+Average response time: 29.277778
+Average waiting time: 28.277778
+Throughput: 0.180000
+================================
+Run 4
+uuuuuuuuuuDoooooooooosssssssssTYYYYYYYgttaaappppppSSWWWWWWWWQQQHHHHHJJJJObbbbbbbVrrrrrrrrrrvvvvvvCCC
+Average turnaround time: 33.333333
+Average response time: 29.571429
+Average waiting time: 28.571429
+Throughput: 0.210000
+================================
+Run 5
+****NNNNNNNNNRRRRRRRssSSSSSSSSSSiiiXXXXXXZZZZZZZZZZLLLLLLLcjjjjjjjOOnnnnnnnnGGGGGGGGCCCCCmmUIIMMMMMMMMMM
+Average turnaround time: 43.333333
+Average response time: 38.777778
+Average waiting time: 37.777778
+Throughput: 0.180000
+================================
+All runs
+Average turnaround time: 36.602222
+Average response time: 31.920952
+Average throughput: 0.180000
+================================
+
+
+SJF Simulation and Statistics
+================================
+Run 1
+*jjjjjjjjUUUUUUQBBBBkkkDDDFRRKKKeuuuuugggggggahhhhhhdddddllSSSSXXXXXZZZZZvvvGGGGGGGIYYYYYYmmCCCnnnnn
+Average turnaround time: 6.000000
+Average response time: 3.192308
+Average waiting time: 2.192308
+Throughput: 0.260000
+================================
+Run 2
+ooooooojRRRRhhhhhhHHHHHHHHWWWWPPPPKKrrnnngggIICCOOOOFFFFTTTTTiGGGGGsssssqqMMvvvvxxxxxXbbbLLLLLLYYYYYY
+Average turnaround time: 11.259259
+Average response time: 8.518519
+Average waiting time: 7.518519
+Throughput: 0.270000
+================================
+Run 3
+ooooooofffHHHHddqqqqFFFFFFFxMIIIIIIllllKKWWWWWWWEEERRRRRRXXXXXNaaawwwwwvvvvvZLLLLLLPggbbbbmmmmmQQQUJJ
+Average turnaround time: 6.750000
+Average response time: 4.142857
+Average waiting time: 3.142857
+Throughput: 0.280000
+================================
+Run 4
+uuuuuuuuuuDTgYYYYYYYttaaaSSQQQOJJJJVHHHHHjRPPGGGcCCCIIIIIAAAvvvvvvlFFFFFFpppppphKddxxxxwwwwiiiiiNNNN
+Average turnaround time: 7.656250
+Average response time: 5.531250
+Average waiting time: 4.531250
+Throughput: 0.320000
+================================
+Run 5
+****ssRRRRRRRiiiXXXXXXcOOmmUCCCCCIIjjjjjjjkkllllDDJJJJJLLLLLLLpPPPooooooqqfffffQQQQQQEbbbeeeeYYYYYYKKKKKK
+Average turnaround time: 7.407407
+Average response time: 4.666667
+Average waiting time: 3.666667
+Throughput: 0.270000
+================================
+All runs
+Average turnaround time: 7.814583
+Average response time: 5.210320
+Average throughput: 0.280000
+================================
+
+
+SRTF Simulation and Statistics
+================================
+Run 1
+*jjjjjjjjUUUUUUQBBBBkkkDDDFRRKKKeuuuuuVVVVVaVVhhhhhhdddddllSSSSXXXXXZZZZZvvvGGGGGGGIYYmmCCCYYYYnnnnn
+Average turnaround time: 5.807692
+Average response time: 2.769231
+Average waiting time: 2.000000
+Throughput: 0.260000
+================================
+Run 2
+ooooojooRRRRhhhhhhVVVVVVVVWWWWPrrKKPPPnnngggIICCOOOOFFFFTTTTTiGGGGGxqqxxxxMMvvvvsssXssbbbYYYYYYwwwwww
+Average turnaround time: 8.629630
+Average response time: 5.592593
+Average waiting time: 4.888889
+Throughput: 0.270000
+================================
+Run 3
+oHHHHfffqqqqoddoooooWWWWWWWxMIIIIIIllllKKFFFFFFFEEERRRRRRXNXXXXaaawwwwwvvvvvZLLLLPLLggbbbbmmmmmQQQUJJ
+Average turnaround time: 6.357143
+Average response time: 3.214286
+Average waiting time: 2.750000
+Throughput: 0.280000
+================================
+Run 4
+uuuDuuuuuTuugYttaaappppppSSQQQOJJJJVHHHHHjRPPGGGcCCCIIIIIAAAFFFFFFlvvvvvvXwwwwKhddxxxxfffffiiiiiNNNN
+Average turnaround time: 4.750000
+Average response time: 2.625000
+Average waiting time: 1.687500
+Throughput: 0.320000
+================================
+Run 5
+****ssRRRRRRRiiiXcOOXXXXXmmUCCCCCIIjjkkjjjjjllllDDJJJJJLLLpLLLLPPPooooooqqfffffQQQEQQQbbbeeeeYYYYYYKKKKKK
+Average turnaround time: 6.851852
+Average response time: 3.851852
+Average waiting time: 3.111111
+Throughput: 0.270000
+================================
+All runs
+Average turnaround time: 6.479263
+Average response time: 3.610592
+Average throughput: 0.280000
+================================
+
+
+RR Simulation and Statistics
+================================
+Run 1
+*jjwjwUjwUbjwUbjwUBQbjkpwUuBDObjJkpwFRgUVruBKDObeJikpwPRhgoVNrauBKWDObJdipwPSlXhLgoVNrutKZWHfxOTbvJG
+Average turnaround time: 35.833333
+Average response time: 7.750000
+Average waiting time: 32.500000
+Throughput: 0.120000
+================================
+Run 2
+ooooRdojRdoRhdoRShHdVShHdVeSBhWHdVeLPQUSBhrWKHsdGVOeLnPQUATgSBhIfrkWKCHsdGFVOeLanDPQUATgiSBtEIJlfxkq
+Average turnaround time: 29.250000
+Average response time: 9.250000
+Average waiting time: 26.125000
+Throughput: 0.080000
+================================
+Run 3
+oHofHqofHqofFHqodFqodDFWoIcOSDFWeIMxcOSDFWleIcOKSDFBGTWleCIncOEKSRDFBkGTXWlueNCIavwncOESRLDhBkGiTXWl
+Average turnaround time: 19.300000
+Average response time: 5.100000
+Average waiting time: 16.100000
+Throughput: 0.100000
+================================
+Run 4
+uuuDuouosuoTsuoYgstuoaYpstuoaSYWpsQHuoJObaSYWpVsQHrvoCGJPjbRYWZpEcsIQHFrvoCGAmJePbnYWZpElMsXIHLFrqvw
+Average turnaround time: 19.266667
+Average response time: 9.333333
+Average waiting time: 17.200000
+Throughput: 0.150000
+================================
+Run 5
+****NRsNRSsNRiSXNRZiSLXcjNOnRZiGSCLXmjNUOnRZIMGSCLXkmjBvNJnlRTZIMDGSCtLXkjBvNpJnVlPTWoZMDwGSCAtqLXdf
+Average turnaround time: 31.166667
+Average response time: 9.250000
+Average waiting time: 28.583333
+Throughput: 0.120000
+================================
+All runs
+Average turnaround time: 26.963333
+Average response time: 8.136667
+Average throughput: 0.114000
+================================
+
+

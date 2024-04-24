@@ -5,7 +5,7 @@
 #include "../header/algo.h"
 
 
-void RoundRobin(Proc* arrivalQueue, const int numProc) {
+void RoundRobin(Proc* arrivalQueue, const int numProc, Avg* avg) {
   // Initialize process queue
   Queue* readyQueue = malloc(sizeof(Queue));
   readyQueue->head = NULL;
@@ -66,6 +66,16 @@ void RoundRobin(Proc* arrivalQueue, const int numProc) {
 
     quantum++;
   }
+ 
+  // Get averages
+  CalcStats(avg, finishQueue, 0, -1);
+  
+  // Print averages
+  printf("\n"); 
+  printf("Average turnaround time: %f\n", avg->avgTurnaround);
+  printf("Average response time: %f\n", avg->avgResponse);
+  printf("Average waiting time: %f\n", avg->avgWaiting);
+  printf("Throughput: %f\n", avg->throughput);
   
   // Free dynamic memory
   free(readyQueue);
