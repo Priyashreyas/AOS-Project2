@@ -23,7 +23,7 @@ void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
   int index = 0;
   Node* runningProc = NULL;
 
-  while (quantum < SIM_TIME) {
+  while (quantum < SIM_TIME || runningProc != NULL) {
     // Check if any process arrives at current quantum
     while (index < numProc && arrivalQueue[index].arrivalTime == quantum) {
       // Initialize new process node
@@ -55,6 +55,9 @@ void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
        runningProc->completionTime = quantum;
        insertNode(finishQueue, runningProc);
        runningProc = NULL;
+       if (quantum >= SIM_TIME) {
+         break;
+       }
     }
 
     // Check if the CPU is available

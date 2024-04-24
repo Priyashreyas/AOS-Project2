@@ -45,7 +45,7 @@ void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
     int index = 0;
     Node* runningProc = NULL;
     
-    while (quantum < SIM_TIME) {
+    while (quantum < SIM_TIME || runningProc != NULL) {
         // Check if any process arrives at the current quantum
 
         while (index < num_proc && arrivalQueue[index].arrivalTime == quantum) {
@@ -83,6 +83,7 @@ void ShortestJobFirst(Proc* arrivalQueue, const int num_proc) {
 		p->arrivalTime = procArray[j].arrivalTime;
 		p->expectedRuntime = procArray[j].expectedRuntime;
 		p->priority = procArray[j].priority;
+		p->name = procArray[j].name;
 		newNode->process = p;
                 newNode->firstRun = -1;
                 newNode->totalRuntime = 0;
