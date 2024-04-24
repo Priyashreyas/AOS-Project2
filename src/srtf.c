@@ -170,9 +170,10 @@ void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc) {
             if (runningProc->firstRun == -1) {
                 runningProc->firstRun = quantum;
             }
-            printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+	    printf("%c", runningProc->process->name);
+            /*printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
                    runningProc->process->name, quantum,
-                   runningProc->process->expectedRuntime - runningProc->totalRuntime);
+                   runningProc->process->expectedRuntime - runningProc->totalRuntime);*/
             runningProc->totalRuntime++;
             if (runningProc->totalRuntime >= runningProc->process->expectedRuntime) {
                 runningProc->completionTime = quantum;
@@ -181,7 +182,8 @@ void ShortestRemainingTimeFirst(Proc* arrivalQueue, const int numProc) {
                 runningProc = NULL; 
             }
         } else {
-            printf("CPU is idle at quantum %d\n", quantum);
+	    printf("*");
+            //printf("CPU is idle at quantum %d\n", quantum);
         }
 
         // Increment quantum at the end of the loop iteration

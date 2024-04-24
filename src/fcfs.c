@@ -39,22 +39,24 @@ void FirstComeFirstServe(Proc* processes, const int num_procs) {
         // Run the current process
         if (runningProc != NULL) {
             runningProc->totalRuntime++;
+	    printf("%c", runningProc->process->name);
             // Check if the process has completed its execution
             if (runningProc->totalRuntime == runningProc->process->expectedRuntime) {
                 runningProc->completionTime = quantum;
 		insertNode(finishQueue, runningProc);
-                printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+                /*printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
                     runningProc->process->name, quantum,
-                    runningProc->process->expectedRuntime - runningProc->totalRuntime);
+                    runningProc->process->expectedRuntime - runningProc->totalRuntime);*/
                 runningProc = NULL;
             } else {
-                printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
+                /*printf("CPU is being used by Process %c at quantum %d. Remaining Time: %d\n",
                    runningProc->process->name, quantum,
-                   runningProc->process->expectedRuntime - runningProc->totalRuntime);
+                   runningProc->process->expectedRuntime - runningProc->totalRuntime);*/
 
             }
         } else {
-            printf("CPU is idle at quantum %d.\n", quantum);
+            printf("*");
+            //printf("CPU is idle at quantum %d.\n", quantum);
         }
 
         quantum++;
