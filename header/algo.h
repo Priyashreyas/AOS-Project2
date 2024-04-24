@@ -7,8 +7,8 @@
 
 #define SIM_TIME 100
 
-void NonPreempHPF(Proc*, const int);
-void PreempHPF(Proc*, const int);
+void NonPreempHPF(Proc*, const int, Avg*);
+void PreempHPF(Proc*, const int, Avg*);
 void FirstComeFirstServe(Proc*, const int, Avg*);
 void ShortestJobFirst(Proc*, const int, Avg*);
 void ShortestRemainingTimeFirst(Proc*, const int, Avg*);

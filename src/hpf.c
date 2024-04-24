@@ -4,7 +4,7 @@
 #include "../header/queue.h"
 #include "../header/algo.h"
 
-void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
+void NonPreempHPF(Proc* arrivalQueue, const int numProc, Avg* avg) {
   // Initialize priority queues
   Queue* priorityQueue1 = malloc(sizeof(Queue));
   priorityQueue1->head = NULL;
@@ -96,6 +96,63 @@ void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
     }
     quantum++;
   }
+
+  printf("\n");
+  // Calculate and print averages
+  for (int prior = 1; prior <= 4; ++prior) {
+    CalcStats(avg, finishQueue, 1, prior);
+    if (prior == 1) {
+      printf("Average turnaround time (P1): %f\n", avg->avgTurnaround);
+      printf("Average response time (P1): %f\n", avg->avgResponse);
+      printf("Average waiting time (P1): %f\n", avg->avgWaiting);
+      printf("Throughput (P1): %f\n\n", avg->throughput);
+      avg->turnaroundP1 = avg->avgTurnaround;
+      avg->responseP1 = avg->avgResponse;
+      avg->waitingP1 = avg->avgWaiting;
+      avg->throughputP1 = avg->throughput;
+      avg->cntP1 = avg->cnt;
+    }
+    else if (prior == 2) {
+      printf("Average turnaround time (P2): %f\n", avg->avgTurnaround);
+      printf("Average response time (P2): %f\n", avg->avgResponse);
+      printf("Average waiting time (P2): %f\n", avg->avgWaiting);
+      printf("Throughput (P2): %f\n\n", avg->throughput);
+      avg->turnaroundP2 = avg->avgTurnaround;
+      avg->responseP2 = avg->avgResponse;
+      avg->waitingP2 = avg->avgWaiting;
+      avg->throughputP2 = avg->throughput;
+      avg->cntP2 = avg->cnt;
+    }
+    else if (prior == 3) {
+      printf("Average turnaround time (P3): %f\n", avg->avgTurnaround);
+      printf("Average response time (P3): %f\n", avg->avgResponse);
+      printf("Average waiting time (P3): %f\n", avg->avgWaiting);
+      printf("Throughput (P3): %f\n\n", avg->throughput);
+      avg->turnaroundP3 = avg->avgTurnaround;
+      avg->responseP3 = avg->avgResponse;
+      avg->waitingP3 = avg->avgWaiting;
+      avg->throughputP3 = avg->throughput;
+      avg->cntP3 = avg->cnt;
+    }
+    else if (prior == 4) {
+      printf("Average turnaround time (P4): %f\n", avg->avgTurnaround);
+      printf("Average response time (P4): %f\n", avg->avgResponse);
+      printf("Average waiting time (P4): %f\n", avg->avgWaiting);
+      printf("Throughput (P4): %f\n\n", avg->throughput);
+      avg->turnaroundP4 = avg->avgTurnaround;
+      avg->responseP4 = avg->avgResponse;
+      avg->waitingP4 = avg->avgWaiting;
+      avg->throughputP4 = avg->throughput;
+      avg->cntP4 = avg->cnt;
+    }
+  }
+
+  CalcStats(avg, finishQueue, 0, -1);
+  printf("Average turnaround time: %f\n", avg->avgTurnaround);
+  printf("Average response time: %f\n", avg->avgResponse);
+  printf("Average waiting time: %f\n", avg->avgWaiting);
+  printf("Throughput: %f\n", avg->throughput);
+
   // Free dynamic memory
   free(priorityQueue1);
   priorityQueue1 = NULL;
@@ -109,7 +166,7 @@ void NonPreempHPF(Proc* arrivalQueue, const int numProc) {
   finishQueue = NULL;
 }
 
-void PreempHPF(Proc* arrivalQueue, const int numProc) {
+void PreempHPF(Proc* arrivalQueue, const int numProc, Avg* avg) {
   // Initialize priority queues
   Queue* priorityQueue1 = malloc(sizeof(Queue));
   priorityQueue1->head = NULL;
@@ -216,6 +273,63 @@ void PreempHPF(Proc* arrivalQueue, const int numProc) {
     }
     quantum++;
   }
+
+  printf("\n"); 
+  // Calculate and print averages
+  for (int prior = 1; prior <= 4; ++prior) {
+    CalcStats(avg, finishQueue, 1, prior);
+    if (prior == 1) {
+      printf("Average turnaround time (P1): %f\n", avg->avgTurnaround);
+      printf("Average response time (P1): %f\n", avg->avgResponse);
+      printf("Average waiting time (P1): %f\n", avg->avgWaiting);
+      printf("Throughput (P1): %f\n\n", avg->throughput);
+      avg->turnaroundP1 = avg->avgTurnaround;
+      avg->responseP1 = avg->avgResponse;
+      avg->waitingP1 = avg->avgWaiting;
+      avg->throughputP1 = avg->throughput;
+      avg->cntP1 = avg->cnt;
+    }
+    else if (prior == 2) {
+      printf("Average turnaround time (P2): %f\n", avg->avgTurnaround);
+      printf("Average response time (P2): %f\n", avg->avgResponse);
+      printf("Average waiting time (P2): %f\n", avg->avgWaiting);
+      printf("Throughput (P2): %f\n\n", avg->throughput);
+      avg->turnaroundP2 = avg->avgTurnaround;
+      avg->responseP2 = avg->avgResponse;
+      avg->waitingP2 = avg->avgWaiting;
+      avg->throughputP2 = avg->throughput;
+      avg->cntP2 = avg->cnt;
+    }
+    else if (prior == 3) {
+      printf("Average turnaround time (P3): %f\n", avg->avgTurnaround);
+      printf("Average response time (P3): %f\n", avg->avgResponse);
+      printf("Average waiting time (P3): %f\n", avg->avgWaiting);
+      printf("Throughput (P3): %f\n\n", avg->throughput);
+      avg->turnaroundP3 = avg->avgTurnaround;
+      avg->responseP3 = avg->avgResponse;
+      avg->waitingP3 = avg->avgWaiting;
+      avg->throughputP3 = avg->throughput;
+      avg->cntP3 = avg->cnt;
+    }
+    else if (prior == 4) {
+      printf("Average turnaround time (P4): %f\n", avg->avgTurnaround);
+      printf("Average response time (P4): %f\n", avg->avgResponse);
+      printf("Average waiting time (P4): %f\n", avg->avgWaiting);
+      printf("Throughput (P4): %f\n\n", avg->throughput);
+      avg->turnaroundP4 = avg->avgTurnaround;
+      avg->responseP4 = avg->avgResponse;
+      avg->waitingP4 = avg->avgWaiting;
+      avg->throughputP4 = avg->throughput;
+      avg->cntP4 = avg->cnt;
+    }
+  }
+
+  CalcStats(avg, finishQueue, 0, -1);
+  printf("Average turnaround time: %f\n", avg->avgTurnaround);
+  printf("Average response time: %f\n", avg->avgResponse);
+  printf("Average waiting time: %f\n", avg->avgWaiting);
+  printf("Throughput: %f\n", avg->throughput);
+ 
   // Free dynamic memory
   free(priorityQueue1);
   priorityQueue1 = NULL;

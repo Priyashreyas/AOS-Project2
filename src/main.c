@@ -32,20 +32,7 @@ int main() {
     for (int j = 0; j < NUM_PROC; ++j) {
       //printf("Process %c arrives at %d: priority (%d), runtime (%d)\n", arrivalQueue[i][j].name, arrivalQueue[i][j].arrivalTime, arrivalQueue[i][j].priority, arrivalQueue[i][j].expectedRuntime);
     }
-    //printf("\n\n");
-    
-    //FirstComeFirstServe(arrivalQueue[i], NUM_PROC);
-    //printf("\n\n");
-    //ShortestJobFirst(arrivalQueue[i], NUM_PROC);
-    //printf("\n\n");
-    //ShortestRemainingTimeFirst(arrivalQueue[i], NUM_PROC);
-    //printf("\n\n");
-    //RoundRobin(arrivalQueue[i], NUM_PROC);
-    //printf("\n\n");
-    //NonPreempHPF(arrivalQueue[i], NUM_PROC); 
-    //printf("\n\n");
-    //PreempHPF(arrivalQueue[i], NUM_PROC);
-    //printf("\n\n");
+    //printf("\n\n");  
   }
   
   // Store values for average statistics over all runs
@@ -173,6 +160,263 @@ int main() {
   printf("Average response time: %f\n", aggregate.avgResponse);
   printf("Average throughput: %f\n", aggregate.throughput);
   printf("================================\n\n\n");
+  
+  aggregate.avgTurnaround = 0;
+  aggregate.avgResponse = 0;
+  aggregate.avgWaiting = 0;
+  aggregate.throughput = 0;
+
+  aggregate.turnaroundP1 = 0;
+  aggregate.responseP1 = 0;
+  aggregate.waitingP1 = 0;
+  aggregate.throughputP1 = 0;
+  aggregate.cntP1 = 0;
+
+  aggregate.turnaroundP2 = 0;
+  aggregate.responseP2 = 0;
+  aggregate.waitingP2 = 0;
+  aggregate.throughputP2 = 0;
+  aggregate.cntP2 = 0;
+
+  aggregate.turnaroundP3 = 0;
+  aggregate.responseP3 = 0;
+  aggregate.waitingP3 = 0;
+  aggregate.throughputP3 = 0;
+  aggregate.cntP3 = 0;
+
+  aggregate.turnaroundP4 = 0;
+  aggregate.responseP4 = 0;
+  aggregate.waitingP4 = 0;
+  aggregate.throughputP4 = 0;
+  aggregate.cntP4 = 0; 
+
+  // Simulate Non-Preemptive HPF
+  printf("Non-Preemptive HPF Simulation and Statistics\n");
+  for (int i = 0; i < NUM_SETS; ++i) {
+    printf("================================\n");
+    printf("Run %d\n", i + 1);
+    Avg avg;
+    NonPreempHPF(arrivalQueue[i], NUM_PROC, &avg);
+    
+    aggregate.avgTurnaround += avg.avgTurnaround;
+    aggregate.avgResponse += avg.avgResponse;
+    aggregate.avgWaiting += avg.avgWaiting;
+    aggregate.throughput += avg.throughput;
+
+    aggregate.turnaroundP1 += avg.turnaroundP1;
+    aggregate.responseP1 += avg.responseP1;
+    aggregate.waitingP1 += avg.waitingP1;
+    aggregate.throughputP1 += avg.throughputP1;
+    aggregate.cntP1 += avg.cntP1;
+
+    aggregate.turnaroundP2 += avg.turnaroundP2;
+    aggregate.responseP2 += avg.responseP2;
+    aggregate.waitingP2 += avg.waitingP2;
+    aggregate.throughputP2 += avg.throughputP2;
+    aggregate.cntP2 += avg.cntP2;
+
+    aggregate.turnaroundP3 += avg.turnaroundP3;
+    aggregate.responseP3 += avg.responseP3;
+    aggregate.waitingP3 += avg.waitingP3;
+    aggregate.throughputP3 += avg.throughputP3;
+    aggregate.cntP3 += avg.cntP3;
+
+    aggregate.turnaroundP4 += avg.turnaroundP4;
+    aggregate.responseP4 += avg.responseP4;
+    aggregate.waitingP4 += avg.waitingP4;
+    aggregate.throughputP4 += avg.throughputP4;
+    aggregate.cntP4 += avg.cntP4;
+  }
+
+  aggregate.avgTurnaround /= NUM_SETS;
+  aggregate.avgResponse /= NUM_SETS;
+  aggregate.avgWaiting /= NUM_SETS;
+  aggregate.throughput /= NUM_SETS;
+
+  if (aggregate.cntP1) {
+    aggregate.turnaroundP1 /= aggregate.cntP1;
+    aggregate.responseP1 /= aggregate.cntP1;
+    aggregate.waitingP1 /= aggregate.cntP1;
+    aggregate.throughputP1 /= aggregate.cntP1;
+  }
+
+  if (aggregate.cntP2) {
+    aggregate.turnaroundP2 /= aggregate.cntP2;
+    aggregate.responseP2 /= aggregate.cntP2;
+    aggregate.waitingP2 /= aggregate.cntP2;
+   aggregate.throughputP2 /= aggregate.cntP2;
+  }
+
+  if (aggregate.cntP3) {
+    aggregate.turnaroundP3 /= aggregate.cntP3;
+    aggregate.responseP3 /= aggregate.cntP3;
+    aggregate.waitingP3 /= aggregate.cntP3;
+    aggregate.throughputP3 /= aggregate.cntP3;
+  }
+
+  if (aggregate.cntP4) {
+    aggregate.turnaroundP4 /= aggregate.cntP4;
+    aggregate.responseP4 /= aggregate.cntP4;
+    aggregate.waitingP4 /= aggregate.cntP4;
+    aggregate.throughputP4 /= aggregate.cntP4;
+  }
+
+  // Print average statics over all runs
+  printf("================================\n");
+  printf("All runs\n");
+  printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
+  printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average throughput: %f\n\n", aggregate.throughput);
+  
+  printf("Average turnaround time (P1): %f\n", aggregate.turnaroundP1);
+  printf("Average response time (P1): %f\n", aggregate.responseP1);
+  printf("Average waiting time (P1): %f\n", aggregate.waitingP1);
+  printf("Average throughput (P1); %f\n\n", aggregate.throughputP1);
+  
+  printf("Average turnaround time (P2): %f\n", aggregate.turnaroundP2);
+  printf("Average response time (P2): %f\n", aggregate.responseP2);
+  printf("Average waiting time (P2): %f\n", aggregate.waitingP2);
+  printf("Average throughput (P2); %f\n\n", aggregate.throughputP2);
+  
+  printf("Average turnaround time (P3): %f\n", aggregate.turnaroundP3);
+  printf("Average response time (P3): %f\n", aggregate.responseP3);
+  printf("Average waiting time (P3): %f\n", aggregate.waitingP3);
+  printf("Average throughput (P3); %f\n\n", aggregate.throughputP3);
+  
+  printf("Average turnaround time (P4): %f\n", aggregate.turnaroundP4);
+  printf("Average response time (P4): %f\n", aggregate.responseP4);
+  printf("Average waiting time (P4): %f\n", aggregate.waitingP4);
+  printf("Average throughput (P4); %f\n", aggregate.throughputP4);
+  printf("================================\n\n\n");
+
+  aggregate.avgTurnaround = 0;
+  aggregate.avgResponse = 0;
+  aggregate.avgWaiting = 0;
+  aggregate.throughput = 0;
+
+  aggregate.turnaroundP1 = 0;
+  aggregate.responseP1 = 0;
+  aggregate.waitingP1 = 0;
+  aggregate.throughputP1 = 0;
+  aggregate.cntP1 = 0;
+
+  aggregate.turnaroundP2 = 0;
+  aggregate.responseP2 = 0;
+  aggregate.waitingP2 = 0;
+  aggregate.throughputP2 = 0;
+  aggregate.cntP2 = 0;
+
+  aggregate.turnaroundP3 = 0;
+  aggregate.responseP3 = 0;
+  aggregate.waitingP3 = 0;
+  aggregate.throughputP3 = 0;
+  aggregate.cntP3 = 0;
+
+  aggregate.turnaroundP4 = 0;
+  aggregate.responseP4 = 0;
+  aggregate.waitingP4 = 0;
+  aggregate.throughputP4 = 0;
+  aggregate.cntP4 = 0; 
+
+  // Simulate Preemptive HPF
+  printf("Preemptive HPF Simulation and Statistics\n");
+  for (int i = 0; i < NUM_SETS; ++i) {
+    printf("================================\n");
+    printf("Run %d\n", i + 1);
+    Avg avg;
+    PreempHPF(arrivalQueue[i], NUM_PROC, &avg);
+    
+    aggregate.avgTurnaround += avg.avgTurnaround;
+    aggregate.avgResponse += avg.avgResponse;
+    aggregate.avgWaiting += avg.avgWaiting;
+    aggregate.throughput += avg.throughput;
+
+    aggregate.turnaroundP1 += avg.turnaroundP1;
+    aggregate.responseP1 += avg.responseP1;
+    aggregate.waitingP1 += avg.waitingP1;
+    aggregate.throughputP1 += avg.throughputP1;
+    aggregate.cntP1 += avg.cntP1;
+
+    aggregate.turnaroundP2 += avg.turnaroundP2;
+    aggregate.responseP2 += avg.responseP2;
+    aggregate.waitingP2 += avg.waitingP2;
+    aggregate.throughputP2 += avg.throughputP2;
+    aggregate.cntP2 += avg.cntP2;
+
+    aggregate.turnaroundP3 += avg.turnaroundP3;
+    aggregate.responseP3 += avg.responseP3;
+    aggregate.waitingP3 += avg.waitingP3;
+    aggregate.throughputP3 += avg.throughputP3;
+    aggregate.cntP3 += avg.cntP3;
+
+    aggregate.turnaroundP4 += avg.turnaroundP4;
+    aggregate.responseP4 += avg.responseP4;
+    aggregate.waitingP4 += avg.waitingP4;
+    aggregate.throughputP4 += avg.throughputP4;
+    aggregate.cntP4 += avg.cntP4;
+  }
+
+  aggregate.avgTurnaround /= NUM_SETS;
+  aggregate.avgResponse /= NUM_SETS;
+  aggregate.avgWaiting /= NUM_SETS;
+  aggregate.throughput /= NUM_SETS;
+
+  if (aggregate.cntP1) {
+    aggregate.turnaroundP1 /= aggregate.cntP1;
+    aggregate.responseP1 /= aggregate.cntP1;
+    aggregate.waitingP1 /= aggregate.cntP1;
+    aggregate.throughputP1 /= aggregate.cntP1;
+  }
+
+  if (aggregate.cntP2) {
+    aggregate.turnaroundP2 /= aggregate.cntP2;
+    aggregate.responseP2 /= aggregate.cntP2;
+    aggregate.waitingP2 /= aggregate.cntP2;
+    aggregate.throughputP2 /= aggregate.cntP2;
+  }
+
+  if (aggregate.cntP3) {
+    aggregate.turnaroundP3 /= aggregate.cntP3;
+    aggregate.responseP3 /= aggregate.cntP3;
+    aggregate.waitingP3 /= aggregate.cntP3;
+    aggregate.throughputP3 /= aggregate.cntP3;
+  }
+
+  if (aggregate.cntP4) {
+    aggregate.turnaroundP4 /= aggregate.cntP4;
+    aggregate.responseP4 /= aggregate.cntP4;
+    aggregate.waitingP4 /= aggregate.cntP4;
+    aggregate.throughputP4 /= aggregate.cntP4;
+  }
+
+  // Print average statics over all runs
+  printf("================================\n");
+  printf("All runs\n");
+  printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
+  printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average throughput: %f\n\n", aggregate.throughput);
+  
+  printf("Average turnaround time (P1): %f\n", aggregate.turnaroundP1);
+  printf("Average response time (P1): %f\n", aggregate.responseP1);
+  printf("Average waiting time (P1): %f\n", aggregate.waitingP1);
+  printf("Average throughput (P1); %f\n\n", aggregate.throughputP1);
+  
+  printf("Average turnaround time (P2): %f\n", aggregate.turnaroundP2);
+  printf("Average response time (P2): %f\n", aggregate.responseP2);
+  printf("Average waiting time (P2): %f\n", aggregate.waitingP2);
+  printf("Average throughput (P2); %f\n\n", aggregate.throughputP2);
+  
+  printf("Average turnaround time (P3): %f\n", aggregate.turnaroundP3);
+  printf("Average response time (P3): %f\n", aggregate.responseP3);
+  printf("Average waiting time (P3): %f\n", aggregate.waitingP3);
+  printf("Average throughput (P3); %f\n\n", aggregate.throughputP3);
+  
+  printf("Average turnaround time (P4): %f\n", aggregate.turnaroundP4);
+  printf("Average response time (P4): %f\n", aggregate.responseP4);
+  printf("Average waiting time (P4): %f\n", aggregate.waitingP4);
+  printf("Average throughput (P4); %f\n", aggregate.throughputP4);
+  printf("================================\n\n\n");
+
 
   // Free dynamic memory
   for (int i = 0; i < NUM_SETS; ++i) {

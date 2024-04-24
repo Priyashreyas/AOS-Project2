@@ -23,8 +23,9 @@ void CalcStats(Avg* avg, Queue* finishQueue, int hpf, int prior) {
     count++;
     temp = temp->next;
   }
-  avg->avgTurnaround = turnaround / count;
-  avg->avgResponse = response / count;
-  avg->avgWaiting = waiting / count;
+  avg->avgTurnaround = (count)? turnaround / count : 0;
+  avg->avgResponse = (count)? response / count : 0;
+  avg->avgWaiting = (count)? waiting / count : 0;
   avg->throughput = ((double) count) / SIM_TIME;
+  avg->cnt = (count)? 1 : 0;
 }
