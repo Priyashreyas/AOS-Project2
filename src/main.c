@@ -42,6 +42,9 @@ int main() {
   aggregate.avgWaiting = 0;
   aggregate.throughput = 0;
 
+  // Reminder what asterisk means in time chart
+  printf("Note: * = CPU is idle in time chart\n\n");
+
   // Simulate FCFS
   printf("FCFS Simulation and Statistics\n");
   for (int i = 0; i < NUM_SETS; ++i) {

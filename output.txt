@@ -1,3 +1,5 @@
+Note: * = CPU is idle in time chart
+
 FCFS Simulation and Statistics
 ================================
 Run 1
