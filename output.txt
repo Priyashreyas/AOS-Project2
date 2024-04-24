@@ -3,275 +3,225 @@ Note: * = CPU is idle in time chart
 FCFS Simulation and Statistics
 ================================
 Run 1
-*jjjjjjjjwwwwwwwwwwUUUUUUbbbbbbbBBBBQkkkppppppppuuuuuDDDOOOOOOOOOOJJJJJJJJFRRgggggggVVVVVVVrrrrrrrrKKK
-Average turnaround time: 37.722222
-Average response time: 33.111111
-Average waiting time: 32.111111
+***FFFFFFFFddAAAAAAAAAAppppppDqZZZZwggggggggccccccNNNNNNNNttttttUUUUUUUVVaaaaaaaaaavvvvvvvvvllllllXXXXXXXXX
+Average turnaround time: 34.166667
+Average response time: 29.388889
+Average waiting time: 28.388889
 Throughput: 0.180000
 ================================
 Run 2
-oooooooRRRRdddddddddjhhhhhhSSSSSSSSSHHHHHHHHVVVVVVVVeeeeeeeeeBBBBBBBBBWWWWLLLLLLPPPPQQQQQQQQQQUUUUUUUUU
-Average turnaround time: 34.733333
-Average response time: 28.866667
-Average waiting time: 27.866667
-Throughput: 0.150000
+******ffffWWWWWWWWiiiiiiiiVVVEddddooooooBBBBBNNNNNxxxxxxXXXXXXDDDDmmmmvvvvkkkkkhhhhhTTTTTTTTTTPPPOOOOOO
+Average turnaround time: 33.526316
+Average response time: 29.421053
+Average waiting time: 28.421053
+Throughput: 0.190000
 ================================
 Run 3
-oooooooHHHHfffqqqqFFFFFFFddDDDDDDDDWWWWWWWIIIIIIccccccccOOOOOOOOOOSSSSSSSSSSeeeeeeeeeeMxllllKKBBBBBBB
-Average turnaround time: 33.888889
-Average response time: 29.277778
-Average waiting time: 28.277778
-Throughput: 0.180000
+***dXXXXrrbbbbbbbbLLLLLLLLLswRRRRuuuuuuIIInnnnnnnaaaeeeeeeeeeQQQQQQQQHHHHPkkkkVVVVVVVVVVooooooooommmmmmmmmm
+Average turnaround time: 26.100000
+Average response time: 21.900000
+Average waiting time: 20.900000
+Throughput: 0.200000
 ================================
 Run 4
-uuuuuuuuuuDoooooooooosssssssssTYYYYYYYgttaaappppppSSWWWWWWWWQQQHHHHHJJJJObbbbbbbVrrrrrrrrrrvvvvvvCCC
-Average turnaround time: 33.333333
-Average response time: 29.571429
-Average waiting time: 28.571429
-Throughput: 0.210000
+**********E***GGGGGGZZZZZIIIIIwwwRRddddddHHHHHHHHHpppppppppooooommmmmmmmmOOOOOOObbbbbbbbbnnnnnnnnXXXXXX
+Average turnaround time: 35.133333
+Average response time: 30.133333
+Average waiting time: 29.133333
+Throughput: 0.150000
 ================================
 Run 5
-****NNNNNNNNNRRRRRRRssSSSSSSSSSSiiiXXXXXXZZZZZZZZZZLLLLLLLcjjjjjjjOOnnnnnnnnGGGGGGGGCCCCCmmUIIMMMMMMMMMM
-Average turnaround time: 43.333333
-Average response time: 38.777778
-Average waiting time: 37.777778
-Throughput: 0.180000
+EEEEEEEEEEUUUQQQQvvvvvvvooKKKKKffffjjjjjjjjjjppppppppppWFFFFFFFOOMMMMMMHHHHHHHHHHSSSSSSssssssssggggg
+Average turnaround time: 35.529412
+Average response time: 30.647059
+Average waiting time: 29.647059
+Throughput: 0.170000
 ================================
 All runs
-Average turnaround time: 36.602222
-Average response time: 31.920952
-Average throughput: 0.180000
+Average turnaround time: 32.891146
+Average response time: 28.298067
+Average waiting time: 27.298067
+Average throughput: 0.178000
 ================================
 
 
 SJF Simulation and Statistics
 ================================
 Run 1
-*jjjjjjjjUUUUUUQBBBBkkkDDDFRRKKKeuuuuugggggggahhhhhhdddddllSSSSXXXXXZZZZZvvvGGGGGGGIYYYYYYmmCCCnnnnn
-Average turnaround time: 6.000000
-Average response time: 3.192308
-Average waiting time: 2.192308
-Throughput: 0.260000
+***FFFFFFFFDddqZZZZwppppppVVccccccllllllGGGYYYYhhttttttUUUUUUUBrrrIIIILSuujjjjjjjjfffssseeeeEEEkkkkk
+Average turnaround time: 8.259259
+Average response time: 5.666667
+Average waiting time: 4.666667
+Throughput: 0.270000
 ================================
 Run 2
-ooooooojRRRRhhhhhhHHHHHHHHWWWWPPPPKKrrnnngggIICCOOOOFFFFTTTTTiGGGGGsssssqqMMvvvvxxxxxXbbbLLLLLLYYYYYY
-Average turnaround time: 11.259259
-Average response time: 8.518519
-Average waiting time: 7.518519
-Throughput: 0.270000
+******ffffVVVEiiiiiiiiddddDDDDvvvvPPPmmmmZZZZZINNNNNjjjjaakkkkkJJJJGGGGGBBBBBbbbbbQQQhhhhhCpppppFHHHH
+Average turnaround time: 13.040000
+Average response time: 10.240000
+Average waiting time: 9.240000
+Throughput: 0.250000
 ================================
 Run 3
-ooooooofffHHHHddqqqqFFFFFFFxMIIIIIIllllKKWWWWWWWEEERRRRRRXXXXXNaaawwwwwvvvvvZLLLLLLPggbbbbmmmmmQQQUJJ
-Average turnaround time: 6.750000
-Average response time: 4.142857
-Average waiting time: 3.142857
-Throughput: 0.280000
+***drrsXXXXwbbbbbbbbIIIRRRRaaauuuuuunnnnnnnPkkkkNiiccHHHHMAAAAAUUUBYYYYYYpppppfjjjjGGGGGCCCCCCKKKKJJ
+Average turnaround time: 7.241379
+Average response time: 4.896552
+Average waiting time: 3.896552
+Throughput: 0.290000
 ================================
 Run 4
-uuuuuuuuuuDTgYYYYYYYttaaaSSQQQOJJJJVHHHHHjRPPGGGcCCCIIIIIAAAvvvvvvlFFFFFFpppppphKddxxxxwwwwiiiiiNNNN
-Average turnaround time: 7.656250
-Average response time: 5.531250
-Average waiting time: 4.531250
-Throughput: 0.320000
+**********E***GGGGGGRRwwwIIIIIFFSSLLLLssssKKKKKTZZZZZVVrooooollCCCttPPPUUUUJXXXXXXecccccckkvvvvvvaaQQ
+Average turnaround time: 9.750000
+Average response time: 7.607143
+Average waiting time: 6.607143
+Throughput: 0.280000
 ================================
 Run 5
-****ssRRRRRRRiiiXXXXXXcOOmmUCCCCCIIjjjjjjjkkllllDDJJJJJLLLLLLLpPPPooooooqqfffffQQQQQQEbbbeeeeYYYYYYKKKKKK
-Average turnaround time: 7.407407
-Average response time: 4.666667
-Average waiting time: 3.666667
-Throughput: 0.270000
+EEEEEEEEEEUUUooQQQQWOOffffKKKKKSSSSSSkkqgggggVVVVVmZZZAAAAAAbbMMMMMMRRcciiiiNNnnnnnnCCLLLLLwwwxxxxxhhh
+Average turnaround time: 8.178571
+Average response time: 5.535714
+Average waiting time: 4.535714
+Throughput: 0.280000
 ================================
 All runs
-Average turnaround time: 7.814583
-Average response time: 5.210320
-Average throughput: 0.280000
+Average turnaround time: 9.293842
+Average response time: 6.789215
+Average waiting time: 5.789215
+Average throughput: 0.274000
 ================================
 
 
 SRTF Simulation and Statistics
 ================================
 Run 1
-*jjjjjjjjUUUUUUQBBBBkkkDDDFRRKKKeuuuuuVVVVVaVVhhhhhhdddddllSSSSXXXXXZZZZZvvvGGGGGGGIYYmmCCCYYYYnnnnn
-Average turnaround time: 5.807692
-Average response time: 2.769231
-Average waiting time: 2.000000
-Throughput: 0.260000
-================================
-Run 2
-ooooojooRRRRhhhhhhVVVVVVVVWWWWPrrKKPPPnnngggIICCOOOOFFFFTTTTTiGGGGGxqqxxxxMMvvvvsssXssbbbYYYYYYwwwwww
-Average turnaround time: 8.629630
-Average response time: 5.592593
-Average waiting time: 4.888889
-Throughput: 0.270000
-================================
-Run 3
-oHHHHfffqqqqoddoooooWWWWWWWxMIIIIIIllllKKFFFFFFFEEERRRRRRXNXXXXaaawwwwwvvvvvZLLLLPLLggbbbbmmmmmQQQUJJ
-Average turnaround time: 6.357143
-Average response time: 3.214286
-Average waiting time: 2.750000
+***FddFFFDFFFFqZwZZZccccccVVttttttlYYYYlGGGlhhlllppppppUUUBUUUUrrrILSIIIuuoooooooofffssseeeeEEEkTkkkk
+Average turnaround time: 7.285714
+Average response time: 4.178571
+Average waiting time: 3.785714
 Throughput: 0.280000
 ================================
+Run 2
+******ffffVVVEiddddBBBBBNNNNNvvvvmmmmPPPDDDDIZZZZZjjjjqqaaqqqJJJJbbbbbGGGGGpppppQQQhhhhhkCkkkkFHHHHMMMMMM
+Average turnaround time: 9.884615
+Average response time: 7.000000
+Average waiting time: 6.115385
+Throughput: 0.260000
+================================
+Run 3
+***drrsXwXXXbbRRRRbbIIIbbbbaaauuuuuunHPHHHkkkknNniiccnMnnnAAAAAUUUBYYYYYYpppfppjjjjGGGGGCKKKKCCCCCqq
+Average turnaround time: 6.620690
+Average response time: 3.275862
+Average waiting time: 3.275862
+Throughput: 0.290000
+================================
 Run 4
-uuuDuuuuuTuugYttaaappppppSSQQQOJJJJVHHHHHjRPPGGGcCCCIIIIIAAAFFFFFFlvvvvvvXwwwwKhddxxxxfffffiiiiiNNNN
-Average turnaround time: 4.750000
-Average response time: 2.625000
-Average waiting time: 1.687500
-Throughput: 0.320000
+**********E***GwwwRRoooooGGFFSSGGGLLLLssssKKKTKKIIVVIIIrZZllCCCZZZttPPPUUJUUvvvvvveckkcccccffffffaaQQ
+Average turnaround time: 7.785714
+Average response time: 4.750000
+Average waiting time: 4.642857
+Throughput: 0.280000
 ================================
 Run 5
-****ssRRRRRRRiiiXcOOXXXXXmmUCCCCCIIjjkkjjjjjllllDDJJJJJLLLpLLLLPPPooooooqqfffffQQQEQQQbbbeeeeYYYYYYKKKKKK
-Average turnaround time: 6.851852
-Average response time: 3.851852
-Average waiting time: 3.111111
-Throughput: 0.270000
+EEEUUUQQQQvooffffWKOOKKKKSSSSSSMMMMMMkkqgggggVVVVVmZZZAAAbbAAAvvvRRccvvviiiiNNnCCnnnnnLLLLLwwwuuuuuhhh
+Average turnaround time: 7.250000
+Average response time: 2.535714
+Average waiting time: 3.714286
+Throughput: 0.280000
 ================================
 All runs
-Average turnaround time: 6.479263
-Average response time: 3.610592
-Average throughput: 0.280000
+Average turnaround time: 7.765347
+Average response time: 4.348030
+Average waiting time: 4.306821
+Average throughput: 0.278000
 ================================
 
 
 RR Simulation and Statistics
 ================================
 Run 1
-*jjwjwUjwUbjwUbjwUBQbjkpwUuBDObjJkpwFRgUVruBKDObeJikpwPRhgoVNrauBKWDObJdipwPSlXhLgoVNrutKZWHfxOTbvJG
-Average turnaround time: 35.833333
-Average response time: 7.750000
-Average waiting time: 32.500000
-Throughput: 0.120000
+***FdFdFApFDApFqAZpFwgcAZpFNtUgcVAaZpFNtUvlgcXVAYmaZpNGtUvlhCgPcXAYmaRNGtUBjvloIhCrgPcXALYSmHaRiuNGt
+Average turnaround time: 24.076923
+Average response time: 8.307692
+Average waiting time: 21.538462
+Throughput: 0.130000
 ================================
 Run 2
-ooooRdojRdoRhdoRShHdVShHdVeSBhWHdVeLPQUSBhrWKHsdGVOeLnPQUATgSBhIfrkWKCHsdGFVOeLanDPQUATgiSBtEIJlfxkq
-Average turnaround time: 29.250000
-Average response time: 9.250000
-Average waiting time: 26.125000
-Throughput: 0.080000
+******ffWifWVifWEVidWoVBiNdWxoBXiDNdWmvxokhBXTiPDONdWmZLvxokhIBXTwiqPjDrONUWsmcZapLvxJonbkhBXTGwiqPj
+Average turnaround time: 41.777778
+Average response time: 4.888889
+Average waiting time: 37.666667
+Throughput: 0.090000
 ================================
 Run 3
-oHofHqofHqofFHqodFqodDFWoIcOSDFWeIMxcOSDFWleIcOKSDFBGTWleCIncOEKSRDFBkGTXWlueNCIavwncOESRLDhBkGiTXWl
-Average turnaround time: 19.300000
-Average response time: 5.100000
-Average waiting time: 16.100000
-Throughput: 0.100000
+***dXrbLsXrbwLXbRLXbRLuIbnRLuaIbnRLuaIbenQLuHaPbkenQVLouHmWNYikcenQAVMSLOouEHmZWYiUkceFBnQAVClpSOtho
+Average turnaround time: 22.941176
+Average response time: 6.411765
+Average waiting time: 20.000000
+Throughput: 0.170000
 ================================
 Run 4
-uuuDuouosuoTsuoYgstuoaYpstuoaSYWpsQHuoJObaSYWpVsQHrvoCGJPjbRYWZpEcsIQHFrvoCGAmJePbnYWZpElMsXIHLFrqvw
-Average turnaround time: 19.266667
-Average response time: 9.333333
-Average waiting time: 17.200000
-Throughput: 0.150000
+**********E***GZIwGRdZHIpomwGORdZHbInpoXFmSwLGOdZqHsbgInpKoXFYmSTLGxOdZVqHDsbrgInpUlKoCNXYmutjMLPGxf
+Average turnaround time: 36.400000
+Average response time: 7.500000
+Average waiting time: 33.600000
+Throughput: 0.100000
 ================================
 Run 5
-****NRsNRSsNRiSXNRZiSLXcjNOnRZiGSCLXmjNUOnRZIMGSCLXkmjBvNJnlRTZIMDGSCtLXkjBvNpJnVlPTWoZMDwGSCAtqLXdf
-Average turnaround time: 31.166667
-Average response time: 9.250000
-Average waiting time: 28.583333
+EEEUEQvUEQvUEQovKfEjQopvWFKfOMEjHpSvFKsfOMEgjHpkSvFKaqsfVMGEgjHIApZkSmvFlKaTsbVMGgjHIRXAcpZnSiFlaNTs
+Average turnaround time: 30.666667
+Average response time: 6.333333
+Average waiting time: 27.166667
 Throughput: 0.120000
 ================================
 All runs
-Average turnaround time: 26.963333
-Average response time: 8.136667
-Average throughput: 0.114000
+Average turnaround time: 31.172509
+Average response time: 6.688336
+Average waiting time: 27.994359
+Average throughput: 0.122000
 ================================
 
 
 Non-Preemptive HPF Simulation and Statistics
 ================================
 Run 1
-*jjjjjjjjUUUUUUQwwwwwwwwwwkkkuuuuuOOOOOOOOOORRrrrrrrrrePPPPPPPPPllVVVVVVVZZZZZffffffffffNNNNNNNNNNWWWWWWWWWW
-Average turnaround time (P1): 18.000000
-Average response time (P1): 12.454545
-Average waiting time (P1): 12.454545
-Throughput (P1): 0.110000
+***FFFFFFFFppppppZZZZwNNNNNNNNttttttAAAAAAAAAADccccccRRRRRRRRRBUUUUUUUSVVvvvvvvvvvWWWWWWWWWXXXXXXXXX
+Average turnaround time (P1): 8.555556
+Average response time (P1): 3.555556
+Average waiting time (P1): 3.555556
+Throughput (P1): 0.090000
 
-Average turnaround time (P2): 41.250000
-Average response time (P2): 34.250000
-Average waiting time (P2): 34.250000
-Throughput (P2): 0.040000
-
-Average turnaround time (P3): 15.500000
-Average response time (P3): 6.500000
-Average waiting time (P3): 6.500000
-Throughput (P3): 0.020000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 23.176471
-Average response time: 16.882353
-Average waiting time: 16.882353
-Throughput: 0.170000
-================================
-Run 2
-ooooooojRRRRhhhhhhHHHHHHHHVVVVVVVVQQQQQQQQQQsssssGGGGGnnnAAAAAAAAAAfffffffFFFFDDDDDDDDDDJJJJJJJJJJlllllllll
-Average turnaround time (P1): 21.785714
-Average response time (P1): 14.857143
-Average waiting time (P1): 14.857143
-Throughput (P1): 0.140000
-
-Average turnaround time (P2): 8.000000
-Average response time (P2): 2.000000
-Average waiting time (P2): 2.000000
-Throughput (P2): 0.010000
+Average turnaround time (P2): 42.000000
+Average response time (P2): 35.500000
+Average waiting time (P2): 35.500000
+Throughput (P2): 0.080000
 
 Average turnaround time (P3): 0.000000
 Average response time (P3): 0.000000
 Average waiting time (P3): 0.000000
 Throughput (P3): 0.000000
 
-Average turnaround time (P4): 8.000000
-Average response time (P4): 4.000000
-Average waiting time (P4): 4.000000
-Throughput (P4): 0.010000
-
-Average turnaround time: 20.062500
-Average response time: 13.375000
-Average waiting time: 13.375000
-Throughput: 0.160000
-================================
-Run 3
-oooooooHHHHfffFFFFFFFDDDDDDDDWWWWWWWccccccccOOOOOOOOOOSSSSSSSSSSeeeeeeeeeeMxllllKKXXXXXuuuuuuuuuuNwwwww
-Average turnaround time (P1): 33.250000
-Average response time (P1): 27.437500
-Average waiting time (P1): 27.437500
-Throughput (P1): 0.160000
-
-Average turnaround time (P2): 0.000000
-Average response time (P2): 0.000000
-Average waiting time (P2): 0.000000
-Throughput (P2): 0.000000
-
-Average turnaround time (P3): 12.000000
-Average response time (P3): 7.000000
-Average waiting time (P3): 7.000000
-Throughput (P3): 0.020000
-
 Average turnaround time (P4): 0.000000
 Average response time (P4): 0.000000
 Average waiting time (P4): 0.000000
 Throughput (P4): 0.000000
 
-Average turnaround time: 30.888889
-Average response time: 25.166667
-Average waiting time: 25.166667
-Throughput: 0.180000
+Average turnaround time: 24.294118
+Average response time: 18.588235
+Average waiting time: 18.588235
+Throughput: 0.170000
 ================================
-Run 4
-uuuuuuuuuuDooooooooooYYYYYYYgsssssssssvvvvvvCCCTttSSQQQHHHHHeeeeeeeelMMMMMMMMMPPjRIIIIInnnnnnnnnnNNNN
-Average turnaround time (P1): 9.750000
-Average response time (P1): 4.875000
-Average waiting time (P1): 4.875000
-Throughput (P1): 0.080000
+Run 2
+******ffffWWWWWWWWooooooNNNNNxxxxxxXXXXXXddddTTTTTTTTTTrrrrrrrssssssssaabbbbbllllllllllQQQKKKKKKKKFRRRRRRRRR
+Average turnaround time (P1): 12.307692
+Average response time (P1): 6.461538
+Average waiting time (P1): 6.461538
+Throughput (P1): 0.130000
 
-Average turnaround time (P2): 32.000000
-Average response time (P2): 28.000000
-Average waiting time (P2): 28.000000
-Throughput (P2): 0.130000
+Average turnaround time (P2): 20.666667
+Average response time (P2): 13.333333
+Average waiting time (P2): 13.333333
+Throughput (P2): 0.030000
 
-Average turnaround time (P3): 10.000000
+Average turnaround time (P3): 4.000000
 Average response time (P3): 0.000000
 Average waiting time (P3): 0.000000
 Throughput (P3): 0.010000
@@ -281,185 +231,21 @@ Average response time (P4): 0.000000
 Average waiting time (P4): 0.000000
 Throughput (P4): 0.000000
 
-Average turnaround time: 22.909091
-Average response time: 18.318182
-Average waiting time: 18.318182
-Throughput: 0.220000
-================================
-Run 5
-****NNNNNNNNNssZZZZZZZZZZnnnnnnnnUMMMMMMMMMMvvvvvvvvvvllllpSSSSSSSSSSWWWWWWWWWWQQQQQQEcCCCCCIIkkVVVVVVVVV
-Average turnaround time (P1): 10.363636
-Average response time (P1): 4.000000
-Average waiting time (P1): 4.000000
-Throughput (P1): 0.110000
-
-Average turnaround time (P2): 54.285714
-Average response time (P2): 49.857143
-Average waiting time (P2): 49.857143
-Throughput (P2): 0.070000
-
-Average turnaround time (P3): 0.000000
-Average response time (P3): 0.000000
-Average waiting time (P3): 0.000000
-Throughput (P3): 0.000000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 27.444444
-Average response time: 21.833333
-Average waiting time: 21.833333
-Throughput: 0.180000
-================================
-All runs
-Average turnaround time: 24.896279
-Average response time: 19.115107
-Average throughput: 0.182000
-
-Average turnaround time (P1): 18.629870
-Average response time (P1): 12.724838
-Average waiting time (P1): 12.724838
-Average throughput (P1); 0.120000
-
-Average turnaround time (P2): 33.883929
-Average response time (P2): 28.526786
-Average waiting time (P2): 28.526786
-Average throughput (P2); 0.062500
-
-Average turnaround time (P3): 12.500000
-Average response time (P3): 4.500000
-Average waiting time (P3): 4.500000
-Average throughput (P3); 0.016667
-
-Average turnaround time (P4): 8.000000
-Average response time (P4): 4.000000
-Average waiting time (P4): 4.000000
-Average throughput (P4); 0.010000
-================================
-
-
-Preemptive HPF Simulation and Statistics
-================================
-Run 1
-*jjwjUUUUUUwjbwQjkkukuOuOuORurORrOerOrPOrPOrPOrPOrPPPPPVllNWVNWVNWVZfZfZfZfZffffffNWVHTvqANWVCmHTvqA
-Average turnaround time (P1): 11.181818
-Average response time (P1): 0.636364
-Average waiting time (P1): 5.636364
-Throughput (P1): 0.110000
-
-Average turnaround time (P2): 1.000000
-Average response time (P2): 0.000000
-Average waiting time (P2): 0.000000
-Throughput (P2): 0.010000
-
-Average turnaround time (P3): 0.000000
-Average response time (P3): 0.000000
-Average waiting time (P3): 0.000000
-Throughput (P3): 0.000000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 10.333333
-Average response time: 0.583333
-Average waiting time: 5.166667
-Throughput: 0.120000
-================================
-Run 2
-ooooojooRdhhhhHHHVHVHVHVHVHVQVQVQsQGsQGnsQGAnsQfGAnsQfGFAQfDFAQfDFAfJlDxFAfJlDYxvAfJlDYxvbmAJlDYxvbm
-Average turnaround time (P1): 18.900000
-Average response time (P1): 1.200000
-Average waiting time (P1): 13.100000
-Throughput (P1): 0.100000
-
-Average turnaround time (P2): 0.000000
-Average response time (P2): 0.000000
-Average waiting time (P2): 0.000000
-Throughput (P2): 0.000000
-
-Average turnaround time (P3): 0.000000
-Average response time (P3): 0.000000
-Average waiting time (P3): 0.000000
-Throughput (P3): 0.000000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 18.900000
-Average response time: 1.200000
-Average waiting time: 13.100000
-Throughput: 0.100000
+Average turnaround time: 13.294118
+Average response time: 7.294118
+Average waiting time: 7.294118
+Throughput: 0.170000
 ================================
 Run 3
-oHoHoHoHooofFfdFfdDWDWcDOSWcDOeSMxWcDOeSlWcDOKeSlWcDOKeSlWcDOXeSulNcwOXeSuLcwOXeSuLwOXePSuLwOsXeSAuL
-Average turnaround time (P1): 29.785714
-Average response time (P1): 3.571429
-Average waiting time (P1): 24.857143
-Throughput (P1): 0.140000
+***dbbbbbbbbLLLLLLLLLwRRRRuuuuuunnnnnnnrrIIIoooooooooccaaaQQQQQQQQBSSSSSSSSSCCCCCCpppppggggggggggJJqq
+Average turnaround time (P1): 9.866667
+Average response time (P1): 5.000000
+Average waiting time (P1): 5.000000
+Throughput (P1): 0.150000
 
-Average turnaround time (P2): 0.000000
-Average response time (P2): 0.000000
-Average waiting time (P2): 0.000000
-Throughput (P2): 0.000000
-
-Average turnaround time (P3): 10.000000
-Average response time (P3): 5.000000
-Average waiting time (P3): 7.500000
-Throughput (P3): 0.020000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 27.312500
-Average response time: 3.750000
-Average waiting time: 22.687500
-Throughput: 0.160000
-================================
-Run 4
-uuuDuoososToYgYYYYYYsotsoStsoQSHsoQHsovCvCvCvvvQHsoPjRIHseeeeeeeePlMMMMMMMMMIHnLqwIhndLqwIndLqwNNNNI
-Average turnaround time (P1): 5.750000
-Average response time (P1): 0.125000
-Average waiting time (P1): 0.875000
-Throughput (P1): 0.080000
-
-Average turnaround time (P2): 20.000000
-Average response time (P2): 4.615385
-Average waiting time (P2): 16.923077
-Throughput (P2): 0.130000
-
-Average turnaround time (P3): 0.000000
-Average response time (P3): 0.000000
-Average waiting time (P3): 0.000000
-Throughput (P3): 0.000000
-
-Average turnaround time (P4): 0.000000
-Average response time (P4): 0.000000
-Average waiting time (P4): 0.000000
-Throughput (P4): 0.000000
-
-Average turnaround time: 14.571429
-Average response time: 2.904762
-Average waiting time: 10.809524
-Throughput: 0.210000
-================================
-Run 5
-****NNNNNNNNNsZZZZnZnZnZnZnZUnZnMnMMMMMvMvMvlMvlMvlvlvvvvSpscCIWWWWWWWWWWkSVCQQQQQEQIAqdfkSVxCrAqdfS
-Average turnaround time (P1): 9.909091
-Average response time (P1): 0.272727
-Average waiting time (P1): 3.545455
-Throughput (P1): 0.110000
-
-Average turnaround time (P2): 46.600000
-Average response time (P2): 26.800000
-Average waiting time (P2): 44.800000
+Average turnaround time (P2): 29.800000
+Average response time (P2): 24.800000
+Average waiting time (P2): 24.800000
 Throughput (P2): 0.050000
 
 Average turnaround time (P3): 0.000000
@@ -472,35 +258,255 @@ Average response time (P4): 0.000000
 Average waiting time (P4): 0.000000
 Throughput (P4): 0.000000
 
-Average turnaround time: 21.375000
-Average response time: 8.562500
-Average waiting time: 16.437500
-Throughput: 0.160000
+Average turnaround time: 14.850000
+Average response time: 9.950000
+Average waiting time: 9.950000
+Throughput: 0.200000
 ================================
-All runs
-Average turnaround time: 18.498452
-Average response time: 3.400119
-Average throughput: 0.150000
+Run 4
+**********E***GGGGGGOOOOOOObbbbbbbbbqqqqqqqqssssTZZZZZrIIIIIllNNNNNNNNNttjjjjjjjjMMMMMMMiiiiiiidddddd
+Average turnaround time (P1): 10.500000
+Average response time (P1): 5.083333
+Average waiting time (P1): 5.083333
+Throughput (P1): 0.120000
 
-Average turnaround time (P1): 15.105325
-Average response time (P1): 1.161104
-Average waiting time (P1): 9.602792
-Average throughput (P1); 0.108000
+Average turnaround time (P2): 43.750000
+Average response time (P2): 38.250000
+Average waiting time (P2): 38.250000
+Throughput (P2): 0.040000
 
-Average turnaround time (P2): 22.533333
-Average response time (P2): 10.471795
-Average waiting time (P2): 20.574359
-Average throughput (P2); 0.063333
+Average turnaround time (P3): 0.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 0.000000
+Throughput (P3): 0.000000
 
-Average turnaround time (P3): 10.000000
-Average response time (P3): 5.000000
-Average waiting time (P3): 7.500000
-Average throughput (P3); 0.020000
+Average turnaround time (P4): 1.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.010000
+
+Average turnaround time: 17.764706
+Average response time: 12.588235
+Average waiting time: 12.588235
+Throughput: 0.170000
+================================
+Run 5
+EEEEEEEEEEUUUooKKKKKWHHHHHHHHHHMMMMMMSSSSSSqGGGGGGGGGVVVVVbbAAAAAAZZZccjjjjjjjjjjYYYYYYYYBBBBBBBBBBwww
+Average turnaround time (P1): 9.333333
+Average response time (P1): 4.000000
+Average waiting time (P1): 4.000000
+Throughput (P1): 0.090000
+
+Average turnaround time (P2): 13.875000
+Average response time (P2): 9.625000
+Average waiting time (P2): 9.625000
+Throughput (P2): 0.080000
+
+Average turnaround time (P3): 38.500000
+Average response time (P3): 28.500000
+Average waiting time (P3): 28.500000
+Throughput (P3): 0.020000
 
 Average turnaround time (P4): 0.000000
 Average response time (P4): 0.000000
 Average waiting time (P4): 0.000000
-Average throughput (P4); 0.000000
+Throughput (P4): 0.000000
+
+Average turnaround time: 14.315789
+Average response time: 8.947368
+Average waiting time: 8.947368
+Throughput: 0.190000
+================================
+All runs
+Average turnaround time: 16.903746
+Average response time: 11.473591
+Average waiting time: 11.473591
+Average throughput: 0.180000
+
+Average turnaround time (P1): 10.112650
+Average response time (P1): 4.820085
+Average waiting time (P1): 4.820085
+Average throughput (P1); 0.116000
+
+Average turnaround time (P2): 30.018333
+Average response time (P2): 24.301667
+Average waiting time (P2): 24.301667
+Average throughput (P2); 0.056000
+
+Average turnaround time (P3): 21.250000
+Average response time (P3): 14.250000
+Average waiting time (P3): 14.250000
+Average throughput (P3); 0.015000
+
+Average turnaround time (P4): 1.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Average throughput (P4); 0.010000
+================================
+
+
+Preemptive HPF Simulation and Statistics
+================================
+Run 1
+***FFFFAppppppZZwZZFANtNtNtNtNtNtNNDcFAUVvXYcFAUVvXhYRRRRRBRRRRcFAUvSXhYjrcALWWWWWWWWWUvHXiYjrcAUKKn
+Average turnaround time (P1): 6.555556
+Average response time (P1): 0.111111
+Average waiting time (P1): 1.555556
+Throughput (P1): 0.090000
+
+Average turnaround time (P2): 34.666667
+Average response time (P2): 11.000000
+Average waiting time (P2): 31.666667
+Throughput (P2): 0.060000
+
+Average turnaround time (P3): 0.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 0.000000
+Throughput (P3): 0.000000
+
+Average turnaround time (P4): 0.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.000000
+
+Average turnaround time: 17.800000
+Average response time: 4.466667
+Average waiting time: 13.600000
+Throughput: 0.150000
+================================
+Run 2
+******ffWWWWWWWdWoooNoNxoNxXoNxXNxXxXxXXdTOLdTOLdTrrrrsrsarsarbsbsbsbsbswOLllllQlQlQlKlKlKlKKKFKRKRR
+Average turnaround time (P1): 11.416667
+Average response time (P1): 0.500000
+Average waiting time (P1): 5.833333
+Throughput (P1): 0.120000
+
+Average turnaround time (P2): 21.500000
+Average response time (P2): 0.000000
+Average waiting time (P2): 15.500000
+Throughput (P2): 0.020000
+
+Average turnaround time (P3): 0.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 0.000000
+Throughput (P3): 0.000000
+
+Average turnaround time (P4): 0.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.000000
+
+Average turnaround time: 12.857143
+Average response time: 0.428571
+Average waiting time: 7.214286
+Throughput: 0.140000
+================================
+Run 3
+***dbLbLbwLbLbLRbLRbLRubnLRunLununununnrIaQroooooococooIaQSIaQSQUSBQUSCpCpCpCpCpCggggggggggQUStvKJqJ
+Average turnaround time (P1): 11.076923
+Average response time (P1): 0.769231
+Average waiting time (P1): 5.769231
+Throughput (P1): 0.130000
+
+Average turnaround time (P2): 37.000000
+Average response time (P2): 18.500000
+Average waiting time (P2): 34.250000
+Throughput (P2): 0.040000
+
+Average turnaround time (P3): 0.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 0.000000
+Throughput (P3): 0.000000
+
+Average turnaround time (P4): 0.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.000000
+
+Average turnaround time: 17.176471
+Average response time: 4.941176
+Average waiting time: 12.470588
+Throughput: 0.170000
+================================
+Run 4
+**********E***GZIGdZOOOObObObObbbbqbsqbsqsqsqTqqqIpoGdrZnSllNNNNNtNjMtNjMNjMNjiMjiMjiMjiMjiiiLgKIpDo
+Average turnaround time (P1): 11.583333
+Average response time (P1): 0.500000
+Average waiting time (P1): 6.166667
+Throughput (P1): 0.120000
+
+Average turnaround time (P2): 0.000000
+Average response time (P2): 0.000000
+Average waiting time (P2): 0.000000
+Throughput (P2): 0.000000
+
+Average turnaround time (P3): 0.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 0.000000
+Throughput (P3): 0.000000
+
+Average turnaround time (P4): 1.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.010000
+
+Average turnaround time: 10.769231
+Average response time: 0.461538
+Average waiting time: 5.692308
+Throughput: 0.130000
+================================
+Run 5
+EEEUUUEEEEEooKKKKWKMMHHHHHHHHHHMSMSMSMSqSVSGGGGGGGGGVAZVAbbZVAZVAAcAcEjFsTXENNjYBYBYBYBYBYBwYBwYBwBh
+Average turnaround time (P1): 6.500000
+Average response time (P1): 0.125000
+Average waiting time (P1): 1.750000
+Throughput (P1): 0.080000
+
+Average turnaround time (P2): 12.222222
+Average response time (P2): 2.333333
+Average waiting time (P2): 8.222222
+Throughput (P2): 0.090000
+
+Average turnaround time (P3): 76.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 66.000000
+Throughput (P3): 0.010000
+
+Average turnaround time (P4): 0.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Throughput (P4): 0.000000
+
+Average turnaround time: 13.222222
+Average response time: 1.222222
+Average waiting time: 8.555556
+Throughput: 0.180000
+================================
+All runs
+Average turnaround time: 14.365013
+Average response time: 2.304035
+Average waiting time: 9.506547
+Average throughput: 0.154000
+
+Average turnaround time (P1): 9.426496
+Average response time (P1): 0.401068
+Average waiting time (P1): 4.214957
+Average throughput (P1); 0.108000
+
+Average turnaround time (P2): 26.347222
+Average response time (P2): 7.958333
+Average waiting time (P2): 22.409722
+Average throughput (P2); 0.052500
+
+Average turnaround time (P3): 76.000000
+Average response time (P3): 0.000000
+Average waiting time (P3): 66.000000
+Average throughput (P3); 0.010000
+
+Average turnaround time (P4): 1.000000
+Average response time (P4): 0.000000
+Average waiting time (P4): 0.000000
+Average throughput (P4); 0.010000
 ================================
 
 

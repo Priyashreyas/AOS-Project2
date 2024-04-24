@@ -68,6 +68,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n", aggregate.throughput);
   printf("================================\n\n\n");
   
@@ -99,6 +100,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n", aggregate.throughput);
   printf("================================\n\n\n");
 
@@ -130,6 +132,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n", aggregate.throughput);
   printf("================================\n\n\n");
 
@@ -161,6 +164,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n", aggregate.throughput);
   printf("================================\n\n\n");
   
@@ -269,6 +273,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n\n", aggregate.throughput);
   
   printf("Average turnaround time (P1): %f\n", aggregate.turnaroundP1);
@@ -397,6 +402,7 @@ int main() {
   printf("All runs\n");
   printf("Average turnaround time: %f\n", aggregate.avgTurnaround);
   printf("Average response time: %f\n", aggregate.avgResponse);
+  printf("Average waiting time: %f\n", aggregate.avgWaiting);
   printf("Average throughput: %f\n\n", aggregate.throughput);
   
   printf("Average turnaround time (P1): %f\n", aggregate.turnaroundP1);
